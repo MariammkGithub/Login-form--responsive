@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- Created By Me -->
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Login Form</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+   </head>
+   <body>
+      <div class="center">
+         <div class="header">
+            Login Form
+         </div>
+         <form>
+            <input type="text" placeholder="Email or Username">
+            <i class="far fa-envelope"></i>
+            <input id="pin" type="password" placeholder="Password">
+            <i class="fas fa-lock" onclick="show()"></i>
+            <input type="submit" value="Sign in">
+            <a href="#">Forgot Password?</a>
+         </form>
+      </div>
+      <script>
+         function show(){
+          var pin = document.getElementById('pin');
+          var icon = document.querySelector('.fas');
+          if (pin.type === "password") {
+           pin.type = "text";
+           pin.style.marginTop = "20px";
+           icon.style.color = "#7f2092";
+          }else{
+           pin.type = "password";
+           icon.style.color = "grey";
+          }
+         }
+
+      </script>
+      <script>
+         window.alert(5 + 6);
+         </script>
+   </body>
+</html>
